@@ -1,0 +1,201 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+/* -------styling for header starts----- */
+.header {
+  height: 3.5rem;
+  width: 100%;
+  background-color: rgb(107, 255, 107);
+  color: rgb(20, 20, 20);
+  font-size: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0.5rem 0 0 0.5rem;
+  font-family: "Press Start 2P", cursive;
+}
+
+/* -------styling for header ends----- */
+
+/* -------styling for navbar starts----- */
+.nav-bar {
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(107, 255, 107);
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5rem 0;
+}
+.nav-bar button {
+  height: 2.5rem;
+  padding: 0.5rem;
+  border-radius: 4px 4px 0 0;
+  border: none;
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  box-sizing: border-box;
+}
+.nav-bar button:hover {
+  border: 1px solid black;
+  border-width: 1px 1px 0 1px;
+  cursor: pointer;
+}
+.nav-bar .page-2-btn {
+  background-color: rgb(107, 255, 107);
+}
+.nav-bar .page-1-btn {
+  color: rgb(107, 255, 107);
+  background-color: rgb(20, 20, 20);
+}
+
+/* -------styling for navbar ends----- */
+
+
+/* -----styling for content starts------ */
+.content {
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: rgb(20, 20, 20);
+  box-sizing: border-box;
+}
+.content .page-1,
+.content .page-2 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.content .page-1 div,
+.content .page-2 div {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid white;
+  color: white;
+}
+
+.content .page-1 .formDiv-one,
+.content .page-2 .formDiv-multiple {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  border: none;
+}
+.content .page-1 .outputDiv-one,
+.content .page-2 .outputDiv-multiple {
+  width: 500px;
+  border: none;
+}
+.content .page-1 .outputDiv-one div,
+.content .page-2 .outputDiv-multiple div {
+  padding: 0.5rem 0;
+}
+.content .page-1 .outputDiv-one div input,
+.content .page-2 .outputDiv-multiple div input {
+  width: 90%;
+  display: block;
+  margin: auto;
+}
+.content .page-2 .outputDiv-multiple div input {
+  margin: 0.5rem auto;
+}
+.content .page-1 .outputDiv-one div button {
+  background-color: rgb(107, 255, 107);
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  color: rgb(20, 20, 20);
+  font-weight: bold;
+  border-radius: 4px;
+  border: none;
+  display: block;
+  margin: auto;
+  margin-top: 1rem;
+}
+label,
+input,
+span {
+  display: block;
+  margin: 0.5rem;
+}
+span {
+  color: rgb(107, 255, 107);
+  margin: 0 0 0.5rem 0.5rem;
+}
+
+input[type="number"] {
+  width: 5rem;
+  height: 4rem;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  background-color: rgb(20, 20, 20);
+  color: rgb(107, 255, 107);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+input[type="submit"] {
+  background-color: rgb(107, 255, 107);
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: rgb(20, 20, 20);
+  font-weight: bold;
+  border-radius: 4px;
+  border: none;
+  font-family: "Press Start 2P", cursive;
+}
+input[type="submit"]:hover {
+  box-shadow: 0 0 5px 2px rgb(185, 255, 185);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.outputDiv-one div input,
+.outputDiv-multiple div input {
+  background-color: rgb(20, 20, 20);
+  border: 1px solid white;
+  color: rgb(107, 255, 107);
+}
+.outputDiv-one div input::selection {
+  background-color: rgb(20, 20, 20);
+}
+
+.outputDiv-one div button {
+  cursor: pointer;
+}
+
+h3 {
+  margin: 0;
+  text-align: center;
+}
+label {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* -----styling for content ends------ */
+
+/* ----------media queries----- */
+
+@media screen and (max-width: 425px) {
+  .content {
+    padding: 1rem;
+  }
+  .content .page-1,
+  .content .page-2 {
+    flex-direction: column;
+  }
+
+  .content .page-1 .outputDiv-one,
+  .content .page-2 .outputDiv-multiple {
+    width: 90%;
+    margin: 1rem auto;
+  }
+  .content .page-1 .formDiv-one,
+  .content .page-2 .formDiv-multiple {
+    width: 90%;
+    margin: 1rem auto;
+  }
+  .header {
+    text-align: center;
+    height: 4rem;
+  }
+}

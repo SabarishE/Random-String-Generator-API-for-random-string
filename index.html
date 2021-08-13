@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>random string generator - API</title>
+    <link rel="stylesheet" href="style.css" />
+    
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    </style>
+      
+  </head>
+  
+  <body>
+    
+    <div class="header">Random String Generator</div>
+
+    <div class= "nav-bar">
+      <button class="page-1-btn">one</button>
+      <button class="page-2-btn">many</button>
+    </div>
+
+    <div class="content">
+
+        <div class="page-1">
+
+          <div class="formDiv-one">
+            <form onsubmit="generateOneString();return false;" class="form-1">
+            <label for="length-one">Number of charaters</label>
+            <span>(max-length 199)</span>
+            <input type="number" id="length-one"  max=199 required ></input>
+            <input type="submit" value="generate"></input>
+            </form>
+          </div>
+
+            <div class="outputDiv-one">
+                <h3>RESULT</h3>
+              <div></div>
+            </div>
+          
+        </div>
+
+         <div class="page-2">
+
+          <div class="formDiv-multiple">
+                <form onsubmit="generateMultipleString();return false;" class="form-1">
+                <label>Number of strings</label>
+                <span>(max-199)</span>
+                <input type="number"  id="count-many" max=199  required></input>
+                <label>Number of charaters in each string</label>
+                <span>(max-199)</span>
+                <input type="number" id="length-many" max=199 required></input>
+                <input type="submit" value="generate"></input>
+                </form>
+          </div>
+
+            <div class="outputDiv-multiple">
+              
+              <h3>RESULT</h3>
+                <div></div>
+            </div>
+
+         </div>
+       
+      </div>
+    
+    <script src="index.js"></script>
+  </body>
+</html>
