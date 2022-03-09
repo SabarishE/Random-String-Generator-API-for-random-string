@@ -7,14 +7,22 @@ body {
   height: 3.5rem;
   width: 100%;
   background-color: rgb(107, 255, 107);
-  color: rgb(20, 20, 20);
-  font-size: 1.5rem;
-  display: inline-flex;
-  align-items: center;
   box-sizing: border-box;
-  padding: 0.5rem 0 0 0.5rem;
+  padding: 1rem;
   font-family: "Press Start 2P", cursive;
 }
+
+.header img{
+	width:2rem;
+	height:2rem;
+	margin:0 1rem;
+}
+
+.title{
+ color: rgb(20, 20, 20);
+  font-size: 1.2rem;
+}
+
 
 /* -------styling for header ends----- */
 
@@ -33,12 +41,15 @@ body {
   padding: 0.5rem;
   border-radius: 4px 4px 0 0;
   border: none;
-  margin: 0 1rem;
+  margin: 0 2rem;
   font-size: 1.5rem;
   box-sizing: border-box;
+  border: 1px solid rgb(107, 255, 107);
+  border-bottom:none;
 }
 .nav-bar button:hover {
   border: 1px solid black;
+  border-bottom:none;
   border-width: 1px 1px 0 1px;
   cursor: pointer;
 }
@@ -90,6 +101,7 @@ body {
 .content .page-1 .outputDiv-one div,
 .content .page-2 .outputDiv-multiple div {
   padding: 0.5rem 0;
+   border-radius: 4px;
 }
 .content .page-1 .outputDiv-one div input,
 .content .page-2 .outputDiv-multiple div input {
@@ -153,6 +165,7 @@ input[type="submit"]:hover {
   background-color: rgb(20, 20, 20);
   border: 1px solid white;
   color: rgb(107, 255, 107);
+  border-radius:4px;
 }
 .outputDiv-one div input::selection {
   background-color: rgb(20, 20, 20);
